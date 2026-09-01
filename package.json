@@ -1,0 +1,11 @@
+{
+  "name": "centurion-sentinel-preliminary",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Base44-free preliminary Centurion control plane and Sentinel operator console.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  }
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Centurion / Sentinel</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main>
+      <header class="masthead">
+        <div>
+          <p class="eyebrow">PHALANX PRIME SECURITY OPERATIONS</p>
+          <h1>Centurion <span>/ Sentinel</span></h1>
+          <p class="subhead">Evidence-first monitoring. Human-gated response.</p>
+        </div>
+        <div class="mode"><span></span> SIMULATION-ONLY</div>
+      </header>
+
+      <section class="command-strip" aria-label="Command status">
+        <div><small>CONTROL PLANE</small><strong>Tenant scoped</strong></div>
+        <div><small>EVIDENCE</small><strong>Provenance required</strong></div>
+        <div><small>DRONES</small><strong>Approval gated</strong></div>
+        <div><small>SECRETS</small><strong>Excluded by design</strong></div>
+      </section>
+
+      <section class="metrics" id="metrics" aria-label="Security posture"></section>
+
+      <section class="grid primary-grid">
+        <article class="panel wide">
+          <div class="panel-heading"><div><p class="eyebrow">CURRENT POSTURE</p><h2>Open findings</h2></div><button id="simulate-event" class="button secondary">Simulate signed event</button></div>
+          <div id="findings" class="rows"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-heading"><div><p class="eyebrow">COLLECTOR HEALTH</p><h2>Source registry</h2></div></div>
+          <div id="sources" class="rows compact"></div>
+        </article>
+      </section>
+
+      <section class="grid">
+        <article class="panel">
+          <div class="panel-heading"><div><p class="eyebrow">GOVERNANCE</p><h2>Approval queue</h2></div></div>
+          <div id="approvals" class="rows compact"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-heading"><div><p class="eyebrow">RESPONSE BOUNDARY</p><h2>Drone operations</h2></div></div>
+          <div id="drone-actions" class="rows compact"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-heading"><div><p class="eyebrow">FORENSIC TRAIL</p><h2>Recent audit</h2></div></div>
+          <div id="audit" class="rows compact"></div>
+        </article>
+      </section>
+    </main>
+    <template id="empty"><p class="empty">No records in this scope.</p></template>
+    <script src="/app.js"></script>
+  </body>
+</html>
